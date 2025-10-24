@@ -171,3 +171,26 @@ export const faqsData: Faq[] = [
       "Yes, I provide ongoing website maintenance and support, including updates, security monitoring, backups, and performance optimization to ensure your website runs smoothly and stays up-to-date.",
   },
 ];
+
+export const footerLinks: NavItem[] = [
+  {
+    label: "About",
+    href: "#intro",
+  },
+  {
+    label: "Projects",
+    href: "#projects",
+  },
+  {
+    label: "Testimonials",
+    href: "#testimonials",
+  },
+  {
+    label: "Faqs",
+    href: "#faqs",
+  },
+  {
+    label: "Contact",
+    href: "#contact",
+  },
+];
