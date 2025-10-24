@@ -62,7 +62,7 @@ export const Header = () => {
                   onClick={handleClickMobileNavItem}
                   className="relative isolate block border-t last:border-b border-stone-800 py-8 group/nav-item text-stone-200"
                 >
-                  <div className="container flex items-center justify-between">
+                  <div className="max-w-350 mx-auto flex items-center justify-between">
                     <span className="text-3xl group-hover/nav-item:pl-4 transition-all duration-500">
                       {label}
                     </span>
@@ -89,15 +89,15 @@ export const Header = () => {
         </nav>
       </div>
       <div className="fixed top-0 left-0 z-10 w-full mix-blend-difference backdrop-blur-md">
-        <div className="container h-20 flex items-center justify-between">
+        <div className="max-w-350 mx-auto h-20 flex items-center justify-between">
           <span className="text-xl font-bold uppercase text-white">
             Alex&nbsp;&nbsp;Taylor
           </span>
         </div>
       </div>
       <div className="fixed top-0 left-0 z-10 w-full">
-        <div className="container h-20 flex items-center justify-end">
-          <div className="flex items-center gap-6">
+        <div className="max-w-350 mx-auto h-20 flex items-center justify-end">
+          <div className="flex items-center gap-4">
             <button
               type="button"
               className="size-11 border border-stone-400 bg-stone-200 rounded-full inline-flex items-center justify-center cursor-pointer"

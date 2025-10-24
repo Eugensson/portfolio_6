@@ -28,14 +28,16 @@ export const Hero = () => {
     <section>
       <div className="grid md:grid-cols-12 md:h-screen items-stretch sticky top-0">
         <div className="md:col-span-7 flex flex-col justify-center">
-          <div className="pl-10">
+          <div className="pl-12 max-w-200">
             <motion.h1
               ref={scope}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               className="text-5xl md:text-6xl lg:text-7xl mt-40 md:mt-0"
             >
-              Crafting digital experiences through code and creative design
+              Crafting digital experiences through
+              <br />
+              code and creative design
             </motion.h1>
             <div className="mt-10 flex flex-col md:flex-row items-start md:items-center gap-6">
               <motion.div
