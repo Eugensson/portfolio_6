@@ -65,7 +65,7 @@ export const TestimonialItem = ({ testimonial }: TestimonialItemProps) => {
       </div>
       <blockquote className="md:col-span-3">
         <div
-          className="text-3xl md:text-5xl lg:text-6xl mt-8 md:mt-0"
+          className="text-3xl md:text-4xl lg:text-6xl mt-8 md:mt-0"
           ref={quoteScope}
         >
           <span>&ldquo;</span>

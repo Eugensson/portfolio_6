@@ -29,7 +29,7 @@ export const Hero = () => {
     <section id="home">
       <div className="grid md:grid-cols-12 md:h-screen items-stretch sticky top-0">
         <div className="md:col-span-7 flex flex-col justify-center">
-          <div className="pl-12 max-w-200">
+          <div className="pl-4 lg:pl-12 max-w-200">
             <motion.h1
               ref={scope}
               initial={{ opacity: 0 }}
