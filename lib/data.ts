@@ -12,7 +12,7 @@ import testimonialImage1 from "@/public/assets/testimonial-1.jpg";
 import testimonialImage2 from "@/public/assets/testimonial-2.jpg";
 import testimonialImage3 from "@/public/assets/testimonial-3.jpg";
 
-import { NavItem, Project, Testimonial } from "@/types";
+import { Faq, NavItem, Project, Testimonial } from "@/types";
 
 export const navItems: NavItem[] = [
   {
@@ -130,5 +130,44 @@ export const testimonialsData: Testimonial[] = [
       "Working with Alex was a game-changer. Their innovative web solutions and fresh design insights helped us achieve a modern, responsive, and SEO-friendly website.",
     image: testimonialImage3,
     imagePositionY: 0.55,
+  },
+];
+
+export const faqsData: Faq[] = [
+  {
+    id: "1",
+    question: "How long does it take to build a professional website?",
+    answer:
+      "The timeline for building a website varies depending on its complexity, number of pages, and required features. Typically, small business websites take 3-6 weeks, while more complex e-commerce or custom web applications may take 2-3 months.",
+  },
+  {
+    id: "2",
+    question: "What is your web development process?",
+    answer:
+      "I follow a structured web development process that includes initial project planning, UI/UX design, front-end and back-end development, testing, and regular client check-ins. This ensures a responsive, SEO-friendly, and user-friendly website.",
+  },
+  {
+    id: "3",
+    question: "Do you provide services for international clients?",
+    answer:
+      "Absolutely! I collaborate with clients worldwide, managing different time zones efficiently. My workflow includes online meetings, project management tools, and seamless communication to deliver high-quality web solutions globally.",
+  },
+  {
+    id: "4",
+    question: "Which industries do you have experience in?",
+    answer:
+      "I have worked with clients across various industries such as technology, e-commerce, hospitality, professional services, and creative agencies. Each project benefits from a tailored approach and innovative digital solutions.",
+  },
+  {
+    id: "5",
+    question: "Can you create SEO-friendly websites?",
+    answer:
+      "Yes, every website I build is optimized for search engines using best practices, including responsive design, fast loading times, semantic HTML, meta tags, and structured content to improve online visibility.",
+  },
+  {
+    id: "6",
+    question: "Do you offer website maintenance and support?",
+    answer:
+      "Yes, I provide ongoing website maintenance and support, including updates, security monitoring, backups, and performance optimization to ensure your website runs smoothly and stays up-to-date.",
   },
 ];

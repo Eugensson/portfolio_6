@@ -21,3 +21,9 @@ export type Testimonial = {
   image: StaticImport;
   imagePositionY: number;
 };
+
+export type Faq = {
+  id: string;
+  question: string;
+  answer: string;
+};
