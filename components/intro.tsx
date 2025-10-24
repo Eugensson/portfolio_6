@@ -24,7 +24,7 @@ export const Intro = () => {
       ref={sectionRef}
     >
       <div className="container">
-        <h2 className="text-4xl md:text-7xl lg:text-8xl lg:w-4/5" ref={scope}>
+        <h2 className="h2 lg:w-4/5" ref={scope}>
           Building beautiful websites with clean code and thoughtful design to
           help your business grow and stand out online.
         </h2>

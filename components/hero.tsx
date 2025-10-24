@@ -33,7 +33,7 @@ export const Hero = () => {
               ref={scope}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              className="text-5xl md:text-6xl lg:text-7xl mt-40 md:mt-0"
+              className="h1 mt-40 md:mt-0"
             >
               Crafting digital experiences through
               <br />

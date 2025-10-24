@@ -27,6 +27,14 @@ body {
   @apply w-full max-w-300 mx-auto px-4 xl:px-0;
 }
 
+.h1 {
+  @apply text-5xl md:text-6xl lg:text-7xl;
+}
+
+.h2 {
+  @apply text-4xl md:text-7xl lg:text-8xl;
+}
+
 .section {
   @apply py-24 md:py-32 lg:py-40;
 }
