@@ -1,13 +1,14 @@
 "use client";
 
+import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useRef } from "react";
 import { motion, useScroll, useTransform } from "motion/react";
 
 import { Button } from "@/components/button";
-
 import heroImage from "@/public/assets/hero-image.jpg";
 
+import { handleClickNavItem } from "@/lib/utils";
 import { useTextRevealAnimation } from "@/hooks/use-text-reveal-animation";
 
 export const Hero = () => {
@@ -25,7 +26,7 @@ export const Hero = () => {
   }, [entranceAnimation]);
 
   return (
-    <section>
+    <section id="home">
       <div className="grid md:grid-cols-12 md:h-screen items-stretch sticky top-0">
         <div className="md:col-span-7 flex flex-col justify-center">
           <div className="pl-12 max-w-200">
@@ -45,52 +46,56 @@ export const Hero = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 1.75 }}
               >
-                <Button
-                  variant="secondary"
-                  iconAfter={
-                    <div className="size-5 overflow-hidden">
-                      <div className="h-5 w-10 flex group-hover/button:-translate-x-1/2 transition-transform duration-500">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          strokeWidth="1.5"
-                          stroke="currentColor"
-                          className="size-5"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5"
-                          />
-                        </svg>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          strokeWidth="1.5"
-                          stroke="currentColor"
-                          className="size-5"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5"
-                          />
-                        </svg>
+                <Link href="#projects" onClick={handleClickNavItem}>
+                  <Button
+                    variant="secondary"
+                    iconAfter={
+                      <div className="size-5 overflow-hidden">
+                        <div className="h-5 w-10 flex group-hover/button:-translate-x-1/2 transition-transform duration-500">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            strokeWidth="1.5"
+                            stroke="currentColor"
+                            className="size-5"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5"
+                            />
+                          </svg>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            strokeWidth="1.5"
+                            stroke="currentColor"
+                            className="size-5"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5"
+                            />
+                          </svg>
+                        </div>
                       </div>
-                    </div>
-                  }
-                >
-                  <span>View my work</span>
-                </Button>
+                    }
+                  >
+                    <span>View my work</span>
+                  </Button>
+                </Link>
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, y: "100%" }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 2.25 }}
               >
-                <Button variant="text">Let&apos;s talk</Button>
+                <Link href="#contact" onClick={handleClickNavItem}>
+                  <Button variant="text">Let&apos;s talk</Button>
+                </Link>
               </motion.div>
             </div>
           </div>

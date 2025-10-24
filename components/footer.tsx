@@ -7,6 +7,7 @@ import { useInView } from "motion/react";
 import { Button } from "@/components/button";
 
 import { footerLinks } from "@/lib/data";
+import { handleClickNavItem } from "@/lib/utils";
 import { useTextRevealAnimation } from "@/hooks/use-text-reveal-animation";
 
 export const Footer = () => {
@@ -17,21 +18,6 @@ export const Footer = () => {
     if (!inView) return;
     entranceAnimation();
   }, [entranceAnimation, inView]);
-
-  const handleClickNavItem = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault();
-
-    const url = new URL(e.currentTarget.href);
-    const hash = url.hash;
-
-    const target = document.querySelector(hash);
-
-    if (!target) return;
-
-    target.scrollIntoView({
-      behavior: "smooth",
-    });
-  };
 
   return (
     <footer className="bg-stone-900 text-white" id="contact">
