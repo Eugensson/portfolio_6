@@ -1,8 +1,14 @@
+import { Hero } from "@/components/hero";
+import { Intro } from "@/components/intro";
+import { Header } from "@/components/header";
+
 const Home = () => {
   return (
-    <div className="text-6xl font-bold text-red-orange-500">
-      <div className="container">homepage</div>
-    </div>
+    <>
+      <Header />
+      <Hero />
+      <Intro />
+    </>
   );
 };
 

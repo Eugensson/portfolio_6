@@ -36,5 +36,8 @@ body {
 }
 
 .word {
-  @apply translate-y-full;
+  display: inline-block;
+  overflow: hidden;
+  transform: translateY(100%);
+  opacity: 0;
 }
