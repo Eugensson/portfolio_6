@@ -1,0 +1,40 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+  --font-primary: "Archivo", sans-serif;
+
+  --container-padding: 1rem;
+  --container-padding-md: 2rem;
+  --container-padding-lg: 4rem;
+
+  --breakpoint-sm: 375px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1200px;
+
+  --color-red-orange-500: color-mix(
+    in srgb,
+    theme("colors.red.500") 50%,
+    theme(colors.orange.500) 50%
+  );
+}
+
+body {
+  @apply bg-stone-200 text-stone-900 font-primary;
+}
+
+.container {
+  @apply w-full max-w-300 mx-auto px-4 xl:px-0;
+}
+
+.section {
+  @apply py-24 md:py-32 lg:py-40;
+}
+
+.line {
+  @apply overflow-hidden;
+}
+
+.word {
+  @apply translate-y-full;
+}
