@@ -11,3 +11,13 @@ export type Project = {
   image: StaticImport;
   link: string;
 };
+
+export type Testimonial = {
+  id: string;
+  name: string;
+  company: string;
+  role: string;
+  quote: string;
+  image: StaticImport;
+  imagePositionY: number;
+};

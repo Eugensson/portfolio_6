@@ -8,8 +8,11 @@ import img7 from "@/public/assets/7.jpg";
 import img8 from "@/public/assets/8.jpg";
 import img9 from "@/public/assets/9.jpg";
 import img10 from "@/public/assets/10.jpg";
+import testimonialImage1 from "@/public/assets/testimonial-1.jpg";
+import testimonialImage2 from "@/public/assets/testimonial-2.jpg";
+import testimonialImage3 from "@/public/assets/testimonial-3.jpg";
 
-import { NavItem, Project } from "@/types";
+import { NavItem, Project, Testimonial } from "@/types";
 
 export const navItems: NavItem[] = [
   {
@@ -94,5 +97,38 @@ export const projectsData: Project[] = [
     title: "Serene Beauty",
     image: img10,
     link: "https://serene-beauty-orpin.vercel.app",
+  },
+];
+
+export const testimonialsData: Testimonial[] = [
+  {
+    id: "1",
+    name: "Charlotte Hughes",
+    company: "Pixel Perfect",
+    role: "Head of Design",
+    quote:
+      "Alex's exceptional skills in web development and UI/UX design delivered a visually stunning and high-performing website that exceeded our expectations.",
+    image: testimonialImage1,
+    imagePositionY: 0.2,
+  },
+  {
+    id: "2",
+    name: "Oliver Bennett",
+    company: "Craft Coffee Co.",
+    role: "Founder",
+    quote:
+      "Alex completely revitalised our coffee brand online, creating a user-friendly website that combines elegant design with seamless functionality.",
+    image: testimonialImage2,
+    imagePositionY: 0.1,
+  },
+  {
+    id: "3",
+    name: "Amelia Wright",
+    company: "Studio Minimal",
+    role: "Creative Director",
+    quote:
+      "Working with Alex was a game-changer. Their innovative web solutions and fresh design insights helped us achieve a modern, responsive, and SEO-friendly website.",
+    image: testimonialImage3,
+    imagePositionY: 0.55,
   },
 ];
