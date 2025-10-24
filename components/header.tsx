@@ -53,7 +53,7 @@ export const Header = () => {
         className="fixed top-0 left-0 z-10 w-full h-0 overflow-hidden bg-stone-900"
         ref={navScope}
       >
-        <nav className="mt-20">
+        <nav className="mt-20 px-4">
           <ul className="flex flex-col">
             {navItems.map(({ href, label }) => (
               <li key={label}>
@@ -89,14 +89,14 @@ export const Header = () => {
         </nav>
       </div>
       <div className="fixed top-0 left-0 z-10 w-full mix-blend-difference backdrop-blur-md">
-        <div className="max-w-350 mx-auto h-20 flex items-center justify-between">
+        <div className="max-w-350 mx-auto pl-4 h-20 flex items-center justify-between">
           <span className="text-xl font-bold uppercase text-white">
             Alex&nbsp;&nbsp;Taylor
           </span>
         </div>
       </div>
       <div className="fixed top-0 left-0 z-10 w-full">
-        <div className="max-w-350 mx-auto h-20 flex items-center justify-end">
+        <div className="max-w-350 mx-auto pr-4 h-20 flex items-center justify-end">
           <div className="flex items-center gap-4">
             <button
               type="button"
